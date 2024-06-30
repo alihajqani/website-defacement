@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.car {
+    text-align: center;
+}
+
+.car img {
+    width: 100%; /* تصاویر به عرض 100% از پدر خود (div.car) کشیده می شوند */
+    height: auto; /* ارتفاع به طور خودکار تنظیم می شود */
+    max-width: 100%; /* تصاویر در حداکثر عرض ممکن نگه داشته می شوند */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
